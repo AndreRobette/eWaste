@@ -9,7 +9,7 @@ export function Sidebar() {
 
   return (
     <Container>
-      <Img src={Logo} alt="Meu bichinho" />
+      <Img src={Logo} alt="eWaste" />
         <Button type="button" onClick={goBack}>
           <FiArrowLeft size={24} color="rgba(255,255,255,0.7)" />
         </Button>

@@ -20,14 +20,14 @@ export function GetAnimalData() {
       id: 17,
       latitude: -27.1024667,
       longitude: -52.6342728,
-      name: 'Doge armadurado',
+      name: 'PEV Jardim América',
       specie: 'dog',
     },
     {
       id: 18,
       latitude: -27.1163136,
       longitude: -52.6278108,
-      name: 'Gato ninja',
+      name: 'PEV Santo Antônio / SAIC',
       specie: 'cat',
     },
   ]);
@@ -48,9 +48,13 @@ export function GetAnimalData() {
               className="map-popup"
             >
               {animals.name}
-              <Link to={`/bichinho/${animals.id}`}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://www.google.com/maps/dir/?api=1&destination=${animals.latitude},${animals.longitude}`}
+              >
                 <FiArrowRight size={20} color="#FFF" />
-              </Link>
+              </a>
             </Popup>
           </Marker>
         );

@@ -25,7 +25,7 @@ export const Button = styled.button`
 
   border: 0;
 
-  background: var(--pink);
+  background: #39D552;
   border-radius: 16px;
 
   cursor: pointer;
@@ -39,6 +39,6 @@ export const Button = styled.button`
   transition: all 0.2s;
 
   :hover {
-    background: ${darken(0.1, '#f44a87')};
+    background: ${darken(0.1, '#39D552')};
   }
 `;

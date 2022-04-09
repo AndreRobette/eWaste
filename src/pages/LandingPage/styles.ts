@@ -17,11 +17,11 @@ export const Container = styled.div`
   background-position: center;
   background-size: cover;
 
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     padding: 70px 50px;
   }
 
-  @media (max-width: 520px){
+  @media (max-width: 520px) {
     background-image: none;
     background-color: var(--blue);
     align-items: center;
@@ -31,39 +31,45 @@ export const Container = styled.div`
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 100px;
 
-  @media(max-width: 470px){
+  @media (max-width: 470px) {
     justify-content: center;
   }
 `;
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  width: 100px;
+`;
 
 export const Title = styled.h1`
   font-size: 48px;
   font-weight: 700;
   margin-left: 20px;
-  color: var(--logo);
+  color: #3B89D3;
 
-  @media(max-width: 470px){
+  @media (max-width: 470px) {
     font-size: 36px;
+  }
+
+  > span {
+    color: #39D552;
   }
 `;
 
 export const Content = styled.div`
   width: 460px;
 
-  @media(max-width: 470px){
+  @media (max-width: 470px) {
     width: 400px;
   }
 
-  @media(max-width: 400px){
+  @media (max-width: 400px) {
     width: 350px;
   }
 
-  @media(max-width: 320px){
+  @media (max-width: 320px) {
     width: 300px;
   }
 `;
@@ -74,21 +80,21 @@ export const Description = styled.h1`
 
   margin-bottom: 20px;
 
-  @media (max-width: 940px){
+  @media (max-width: 940px) {
     font-size: 36px;
     margin-left: 0px;
   }
 
-  @media (max-width: 830px){
+  @media (max-width: 830px) {
     font-size: 30px;
     margin-left: 0px;
   }
 
-  @media (max-width: 520px){
+  @media (max-width: 520px) {
     text-align: center;
   }
 
-  @media(max-width: 470px){
+  @media (max-width: 470px) {
     font-size: 28px;
   }
 `;
@@ -100,7 +106,7 @@ export const ButtonContainer = styled.div`
   align-items: flex-start;
   gap: 10px;
 
-  @media (max-width: 520px){
+  @media (max-width: 520px) {
     align-items: center;
   }
 `;
@@ -111,7 +117,7 @@ export const JoinButton = styled.a`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
+
   border: none;
   border-radius: 10px;
 
@@ -127,22 +133,21 @@ export const JoinButton = styled.a`
   text-decoration: none;
   transition: all 0.2s;
 
-
   > svg {
     margin-left: 10px;
   }
 
-  @media (max-width: 940px){
+  @media (max-width: 940px) {
     font-size: 36px;
   }
 
-  @media (max-width: 520px){
+  @media (max-width: 520px) {
     width: 100%;
     justify-content: center;
   }
 
   :hover {
-    color: #fff;
+    color: #C1FFDA;
     cursor: pointer;
   }
 `;
@@ -152,7 +157,7 @@ export const Button = styled(JoinButton)`
   background: transparent;
   padding: 0;
 
-  @media (max-width: 940px){
+  @media (max-width: 940px) {
     font-size: 20px;
     margin-left: 0px;
   }

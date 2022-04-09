@@ -19,26 +19,20 @@ export function LandingPage() {
     <Container>
       <div>
         <Logo>
-          <Img src={MeuBichinho} alt="Meu bichinho" />
-          <Title>meu bichinho</Title>
+          <Img src={MeuBichinho} alt="eWaste" />
+          <Title>
+            <span>e</span>Waste
+          </Title>
         </Logo>
         <Content>
           <Description>
-            O site para você encontrar seu companheirinho
+            Descarte seus eletrônicos de forma correta
           </Description>
         </Content>
         <JoinButton href="/map">
           Visitar <FiArrowRightCircle />
         </JoinButton>
       </div>
-
-      <ButtonContainer>
-        <Button href="/login">
-          Entrar com ONG
-          <FiLogIn />
-        </Button>
-      </ButtonContainer>
-      <Dev href="/about">Saiba mais sobre os desenvolvedores</Dev>
     </Container>
   );
 }

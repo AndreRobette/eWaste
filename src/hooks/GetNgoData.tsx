@@ -18,7 +18,7 @@ export function GetNgoData() {
       id: 19,
       latitude: -27.0954643,
       longitude: -52.6146158,
-      name: 'ONG de Konoha',
+      name: 'PEV Brasão Avenida',
     },
   ]);
 
@@ -38,9 +38,13 @@ export function GetNgoData() {
               className="map-popup"
             >
               {ngo.name}
-              <Link to={`/ong/${ngo.id}`}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://www.google.com/maps/dir/?api=1&destination=${-27.0954643},${-52.6146158}`}
+              >
                 <FiArrowRight size={20} color="#FFF" />
-              </Link>
+              </a>
             </Popup>
           </Marker>
         );
