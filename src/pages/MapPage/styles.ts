@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
 
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .map-popup .leaflet-popup-content-wrapper {
