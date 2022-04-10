@@ -18,16 +18,16 @@ export function GetAnimalData() {
   const [animals] = useState<IAnimalProps[]>([
     {
       id: 17,
-      latitude: -27.1024667,
-      longitude: -52.6342728,
-      name: 'PEV Jardim América',
+      latitude: -27.0933987,
+      longitude: -52.6636685,
+      name: 'PEV Pollen',
       specie: 'dog',
     },
     {
       id: 18,
-      latitude: -27.1163136,
-      longitude: -52.6278108,
-      name: 'PEV Santo Antônio / SAIC',
+      latitude: -27.104573,
+      longitude: -52.6077228,
+      name: 'PEV Arena Condá',
       specie: 'cat',
     },
   ]);
