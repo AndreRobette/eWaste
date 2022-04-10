@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.aside`
   height: 100vh;
   width: 440px;
-  background: linear-gradient(329.54deg, #3B89D3 0%, #C1FFDA 100%);
+  background: linear-gradient(329.54deg, #3b89d3 0%, #c1ffda 100%);
 
   padding: 80px;
   display: flex;
@@ -16,16 +16,22 @@ export const Container = styled.aside`
     width: 300px;
   }
 
-  @media (max-width: 770px) {
-    width: 280px;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    padding: 24px;
   }
+`;
 
-  @media (max-width: 700px) {
-    width: 250px;
-  }
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
 
-  @media (max-width: 620px) {
-    width: 200px;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
   }
 `;
 
@@ -37,18 +43,15 @@ export const LogoDiv = styled.div`
 
   margin-bottom: 124px;
 
-  @media (max-height: 620px) {
-    justify-content: center;
-  }
-  @media (max-height: 565px) {
-    margin-bottom: 20px;
+  @media (max-width: 768px) {
+    margin: 0;
+
+    > h1 {
+      display: none;
+    }
   }
 
   h1 {
-    @media (max-width: 620px) {
-      display: none;
-    }
-
     > span {
       color: #39d552;
     }
@@ -59,6 +62,10 @@ export const Img = styled.img`
   max-width: 190.5px;
   height: 72px;
   margin-right: 10px;
+
+  @media (max-width: 768px) {
+    height: 24px;
+  }
 `;
 
 export const Text = styled.h2`
@@ -66,8 +73,8 @@ export const Text = styled.h2`
   font-weight: 800;
   line-height: 42px;
 
-  @media (max-width: 700px) {
-    font-size: 28px;
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -76,6 +83,11 @@ export const Span = styled.p`
   line-height: 28px;
   margin-top: 24px;
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    font-weight: bold;
+  }
 `;
 
 export const Button = styled.button`
